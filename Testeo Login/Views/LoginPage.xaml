@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Testeo_Login.Views.LoginPage">
+    <ContentPage.Content>
+        <StackLayout>
+            
+            <Label Text="Bienvenido" FontSize="35" TextColor="Blue"></Label>
+            <Label Text="Por favor ingrese su Nombre y Contraseña para ingresar a la aplicación" FontSize="25" TextColor="LightBlue"></Label>
+
+            <Entry Placeholder="Nombre de Usuario" x:Name="usernameEntry" />
+            <Entry Placeholder="Contraseña" IsPassword="True" x:Name="passwordEntry" />
+
+            <Button VerticalOptions="Center" Text="Login" Command="{Binding LoginCommand}"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
